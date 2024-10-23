@@ -1,0 +1,28 @@
+# Tep nay chua cac tham so cau hinh cua du an
+
+# Trang thai ngau nhien
+random_state: 101
+
+# Che do chi tiet cho viec ghi log
+verbose: True
+
+# Duong dan tap du lieu
+data:
+  # Duong dan tap du lieu huan luyen
+  training_data_path: './data/training.csv'
+  # Duong dan tap du lieu kiem tra
+  test_data_path: './data/test.csv'
+  # Kich thuoc du lieu xac thuc cho train_test_split
+  validation_size: 0.33
+
+# Tham so mo hinh
+model:
+  # Cay quyet dinh
+  decision_tree:
+    criterion: 'entropy'
+
+  # Bo phan loai rung ngau nhien
+  random_forest:
+    n_estimators: 10
+# Duong dan luu mo hinh
+model_save_path: './model/'
